@@ -109,32 +109,36 @@ const TextAriaStory = (storiesOf('TextAria', module)
             </Row>
           </Panel>
           <br/>
-          <Panel header={'Disabled examples'}>
-            <Row>
-              <Col lg4>
-                <TextAria placeholder={'TextAria with Disabled props'}
-                          label={'TextAria with Disabled props'}
-                          disabled
-                          icon={'user'}
-                          onChange={action('onChange')}
-                />
-              </Col>
+          <Row>
 
-            </Row>
-          </Panel>
+            <Col lg6>
+              <Panel header={'Row example'}>
+
+                    <TextAria
+                      placeholder={'Row=5'}
+                      label={'Row=5'}
+                      onChange={action('onChange')}
+                      rows={5}
+                    />
+
+              </Panel>
+            </Col>
+            <Col lg6>
+              <Panel header={'Disabled examples'}>
+
+                    <TextAria placeholder={'TextAria with Disabled props'}
+                              label={'TextAria with Disabled props'}
+                              disabled
+                              icon={'user'}
+                              onChange={action('onChange')}
+                    />
+
+              </Panel>
+            </Col>
+          </Row>
+
           <br/>
-          <Panel header={'Row example'}>
-            <Row>
-              <Col lg4>
-                <TextAria
-                  placeholder={'Row=5'}
-                  label={'Row=5'}
-                  onChange={action('onChange')}
-                  rows={5}
-                />
-              </Col>
-            </Row>
-          </Panel>
+
         </div>
     )
 );

@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "fantastic-components": "^2.0.13",
+    "@sambego/storybook-state": "^1.0.6",
+    "fantastic-components": "^2.0.16",
+    "moment": "^2.20.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2"

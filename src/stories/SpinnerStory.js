@@ -11,22 +11,22 @@ const SpinnerStory = (storiesOf('Spinner', module)
             <Container>
               <Row>
                 <Col lg2 md6 sm12>
-                  <Spinner spin={'spinner'}  primary />
+                  <Spinner icon={'spinner'}  primary />
                 </Col>
                 <Col lg2 md6 sm12>
-                  <Spinner spin={'spinner'} secondary />
+                  <Spinner icon={'spinner'} secondary />
                 </Col>
                 <Col lg2 md6 sm12>
-                  <Spinner spin={'spinner'} warning />
+                  <Spinner icon={'spinner'} warning />
                 </Col>
                 <Col lg2 md6 sm12>
-                  <Spinner spin={'spinner'} info/>
+                  <Spinner icon={'spinner'} info/>
                 </Col>
                 <Col lg2 md6 sm12>
-                  <Spinner spin={'spinner'} success/>
+                  <Spinner icon={'spinner'} success/>
                 </Col>
                 <Col lg2 md6 sm12>
-                  <Spinner spin={'spinner'} danger/>
+                  <Spinner icon={'spinner'} danger/>
                 </Col>
               </Row>
 
@@ -37,22 +37,22 @@ const SpinnerStory = (storiesOf('Spinner', module)
             <Container>
               <Row>
                 <Col lg2 md6 sm12>
-                  <Spinner spin={'spinner'}  xxlarg />
+                  <Spinner icon={'spinner'}  xxlarg />
                 </Col>
                 <Col lg2 md6 sm12>
-                  <Spinner spin={'spinner'} xlarg />
+                  <Spinner icon={'spinner'} xlarg />
                 </Col>
                 <Col lg2 md6 sm12>
-                  <Spinner spin={'spinner'} larg />
+                  <Spinner icon={'spinner'} larg />
                 </Col>
                 <Col lg2 md6 sm12>
-                  <Spinner spin={'spinner'} small/>
+                  <Spinner icon={'spinner'} small/>
                 </Col>
                 <Col lg2 md6 sm12>
-                  <Spinner spin={'spinner'} xsmall/>
+                  <Spinner icon={'spinner'} xsmall/>
                 </Col>
                 <Col lg2 md6 sm12>
-                  <Spinner spin={'spinner'} xxsmall/>
+                  <Spinner icon={'spinner'} xxsmall/>
                 </Col>
               </Row>
 

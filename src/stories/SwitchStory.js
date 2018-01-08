@@ -100,6 +100,7 @@ const SwitchStory = (storiesOf('Switch', module)
                     <Col lg2 md6 sm12>
                       <Radio onCheck={action('onChange')}
                              label={'Simple example'}
+                             primary
                       />
                     </Col>
                   </Row>
@@ -109,14 +110,14 @@ const SwitchStory = (storiesOf('Switch', module)
             <Col lg6 md6 sm12>
               <Panel header={'Disabled example'}>
                 <Container>
-                  <Row>
-                    <Col lg2 md6 sm12>
+
                       <Radio onCheck={action('onChange')}
                              label={'Disabled example'}
                              disabled={true}
+                             primary
+
                       />
-                    </Col>
-                  </Row>
+
                 </Container>
               </Panel>
             </Col>
@@ -131,15 +132,15 @@ const SwitchStory = (storiesOf('Switch', module)
             <Col lg6 md6 sm12>
               <Panel header={'Simple example'}>
                 <Container>
-                  <Row>
-                    <Col lg2 md6 sm12>
+
                       <RadioGroup onCheck={action('onChange')}
                                   label={'Simple example'}
                                   onItemSelected={action('onChange')}
                                   items={items}
+                                  primary
+                                  inline
                       />
-                    </Col>
-                  </Row>
+
                 </Container>
               </Panel>
             </Col>
