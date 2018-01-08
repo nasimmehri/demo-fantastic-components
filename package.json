@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@sambego/storybook-state": "^1.0.6",
-    "fantastic-components": "^2.0.16",
+    "fantastic-components": "2.0.16",
     "moment": "^2.20.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

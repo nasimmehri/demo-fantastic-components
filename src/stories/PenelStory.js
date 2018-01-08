@@ -65,6 +65,13 @@ const ButtonStory = (storiesOf('Panel', module)
                 {lorem}
               </Panel>
             </Col>
+            <Col lg6 style={{marginBottom:20}}>
+              <Panel header={'Without Footer'}
+                     danger
+              >
+                {lorem}
+              </Panel>
+            </Col>
           </Row>
 
         </div>

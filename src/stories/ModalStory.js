@@ -59,6 +59,7 @@ const ModalStory = (storiesOf('Modal', module)
                      onClose={() => storePrimary.set({isOpen: !storePrimary.get('isOpen')})}
                      footerChildren={<div><b>footer</b></div>}
                      primary
+                     maxWidth={'500px'}
 
               >{lorem} <br/><br/>{lorem2}</Modal>
             </State>
@@ -71,6 +72,7 @@ const ModalStory = (storiesOf('Modal', module)
                      onClose={() => storeSecondary.set({isOpen: !storeSecondary.get('isOpen')})}
                      footerChildren={<div><b>footer</b></div>}
                      secondary
+                     maxWidth={'500px'}
 
               >{lorem} <br/><br/>{lorem2}</Modal>
             </State>
@@ -83,6 +85,7 @@ const ModalStory = (storiesOf('Modal', module)
                      onClose={() => storeInfo.set({isOpen: !storeInfo.get('isOpen')})}
                      footerChildren={<div><b>footer</b></div>}
                      info
+                     maxWidth={'500px'}
 
               >{lorem} <br/><br/>{lorem2}</Modal>
             </State>
@@ -95,6 +98,7 @@ const ModalStory = (storiesOf('Modal', module)
                      onClose={() => storeDanger.set({isOpen: !storeDanger.get('isOpen')})}
                      footerChildren={<div><b>footer</b></div>}
                      danger
+                     maxWidth={'500px'}
 
               >{lorem} <br/><br/>{lorem2}</Modal>
             </State>
@@ -107,6 +111,7 @@ const ModalStory = (storiesOf('Modal', module)
                      onClose={() => storeSuccess.set({isOpen: !storeSuccess.get('isOpen')})}
                      footerChildren={<div><b>footer</b></div>}
                      success
+                     maxWidth={'500px'}
 
               >{lorem} <br/><br/>{lorem2}</Modal>
             </State>
@@ -119,6 +124,7 @@ const ModalStory = (storiesOf('Modal', module)
                      onClose={() => storeWarning.set({isOpen: !storeWarning.get('isOpen')})}
                      footerChildren={<div><b>footer</b></div>}
                      warning
+                     maxWidth={'500px'}
 
               >{lorem} <br/><br/>{lorem2}</Modal>
             </State>

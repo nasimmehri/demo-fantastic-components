@@ -25,6 +25,8 @@ import ModalStory from './ModalStory';
 import TableStory from './TableStory';
 import DrawerStory from './DrawerStory';
 import ToolTipStory from './ToolTipStory';
+import NotifyStory from './NotifyStory';
+import UploadStory from './UploadStory';
 
 class index extends Component {
   render() {
