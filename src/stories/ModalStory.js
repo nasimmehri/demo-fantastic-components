@@ -44,7 +44,7 @@ const ModalStory = (storiesOf('Modal', module)
           <Row>
             <State store={storeButtons}>
               <Modal isOpen={storeButtons.get('isOpen')}
-                     title={'Modal With Buutons in Footer'}
+                     title={'Modal With Buttons in Footer'}
                      allowClose
                      iconTitle="envelope"
                      Btn1Label={'yes'}
