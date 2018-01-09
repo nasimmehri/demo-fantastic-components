@@ -10,54 +10,49 @@ const DatePickerStory = (storiesOf('DatePicker', module)
       () =>
         <div>
           <Row>
-            <Col lg6 md6 sm12 style={{marginBottom:5}}>
+            <Col lg6 md6 sm12 style={{marginBottom: 5}}>
               <Panel header={'Default DatePicker'}>
-                <Row>
-                  <Col lg4 md6 sm12>
-                    <DatePicker date={moment(new Date())}
-                                onChange={action('onChange')}
-                    />
-                  </Col>
 
-                </Row>
+                <DatePicker date={moment(new Date())}
+                            onChange={action('onChange')}
+                />
+
               </Panel>
             </Col>
-            <Col lg6 md6 sm12 style={{marginBottom:5}}>
+            <Col lg6 md6 sm12 style={{marginBottom: 5}}>
               <Panel header={'Show time'}>
-                <Row>
-                  <Col lg4 md6 sm12>
-                    <DatePicker date={moment(new Date())}
-                                onChange={action('onChange')}
-                                showTime/>
-                  </Col>
-                </Row>
+
+                <DatePicker date={moment(new Date())}
+                            onChange={action('onChange')}
+                            showTime/>
+
               </Panel>
             </Col>
           </Row>
-          {/*  <Panel header={'Theme Examples'}>
-           <Row>
-           <Col lg4 md6 sm12 style={{marginBottom:5}}>
-           <DatePicker date={moment(new Date())} primary  onChange={action('onChange')}/>
-           </Col>
-           <Col lg4 md6 sm12 style={{marginBottom:5}}>
-           <DatePicker date={moment(new Date())} secondary  onChange={action('onChange')}/>
-           </Col>
-           <Col lg4 md6 sm12 style={{marginBottom:5}}>
-           <DatePicker date={moment(new Date())} info  onChange={action('onChange')}/>
-           </Col>
-           <Col lg4 md6 sm12 style={{marginBottom:5}}>
-           <DatePicker date={moment(new Date())} warning  onChange={action('onChange')}/>
-           </Col>
-           <Col lg4 md6 sm12 style={{marginBottom:5}}>
-           <DatePicker date={moment(new Date())} success  onChange={action('onChange')}/>
-           </Col>
-           <Col lg4 md6 sm12 style={{marginBottom:5}}>
-           <DatePicker date={moment(new Date())} danger  onChange={action('onChange')}/>
-           </Col>
-           </Row>
+          <Panel header={'Theme Examples'}>
+            <Row>
+              <Col lg4 md6 sm12 style={{marginBottom: 5}}>
+                <DatePicker date={moment(new Date())} primary onChange={action('onChange')}/>
+              </Col>
+              <Col lg4 md6 sm12 style={{marginBottom: 5}}>
+                <DatePicker date={moment(new Date())} secondary onChange={action('onChange')}/>
+              </Col>
+              <Col lg4 md6 sm12 style={{marginBottom: 5}}>
+                <DatePicker date={moment(new Date())} info onChange={action('onChange')}/>
+              </Col>
+              <Col lg4 md6 sm12 style={{marginBottom: 5}}>
+                <DatePicker date={moment(new Date())} warning onChange={action('onChange')}/>
+              </Col>
+              <Col lg4 md6 sm12 style={{marginBottom: 5}}>
+                <DatePicker date={moment(new Date())} success onChange={action('onChange')}/>
+              </Col>
+              <Col lg4 md6 sm12 style={{marginBottom: 5}}>
+                <DatePicker date={moment(new Date())} danger onChange={action('onChange')}/>
+              </Col>
+            </Row>
 
 
-           </Panel>*/}
+          </Panel>
 
         </div>
     )

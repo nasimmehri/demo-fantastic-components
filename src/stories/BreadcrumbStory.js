@@ -1,7 +1,7 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
-import {action} from '@storybook/addon-actions';
 import {Container, Breadcrumb, Row, Col, Panel} from 'fantastic-components';
+
 import {BrowserRouter as Router} from 'react-router-dom';
 let items=[
   {

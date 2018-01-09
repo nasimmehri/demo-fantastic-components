@@ -2,7 +2,7 @@ import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 import {Container, Input, Row, Col,Panel} from 'fantastic-components';
-const ButtonStory = (storiesOf('Input', module)
+const InputStory = (storiesOf('Input', module)
     .add(
       'Selected Examples',
       () =>
@@ -10,43 +10,43 @@ const ButtonStory = (storiesOf('Input', module)
           <Panel header={'Simple examples'}>
             <Row>
               <Col lg4>
-                <Input placeholder={'primary '}
-                       label={'primary '}
+                <Input placeholder={'Primary '}
+                       label={'Primary '}
                        primary
                        onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <Input placeholder={'secondary'}
-                       label={'secondary'}
+                <Input placeholder={'Secondary'}
+                       label={'Secondary'}
                        secondary
                        onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <Input placeholder={'warning'}
-                       label={'warning'}
+                <Input placeholder={'Warning'}
+                       label={'Warning'}
                        warning
                        onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <Input placeholder={'info'}
-                       label={'info'}
+                <Input placeholder={'Info'}
+                       label={'Info'}
                        info
                        onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <Input placeholder={'danger'}
-                       label={'danger'}
+                <Input placeholder={'Danger'}
+                       label={'Danger'}
                        danger
                        onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <Input placeholder={'success'}
-                       label={'success'}
+                <Input placeholder={'Success'}
+                       label={'Success'}
                        success
                        onChange={action('onChange')}
                 />
@@ -58,48 +58,48 @@ const ButtonStory = (storiesOf('Input', module)
           <Panel header={'Icon examples'} >
             <Row>
               <Col lg4>
-                <Input placeholder={'primary with icon'}
-                       label={'primary with icon'}
+                <Input placeholder={'Primary with icon'}
+                       label={'Primary with icon'}
                        primary
                        icon={'user'}
                        onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <Input placeholder={'secondary with icon'}
-                       label={'secondary with icon'}
+                <Input placeholder={'Secondary with icon'}
+                       label={'Secondary with icon'}
                        secondary
                        icon={'user'}
                        onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <Input placeholder={'warning with icon'}
-                       label={'warning with icon'}
+                <Input placeholder={'Warning with icon'}
+                       label={'Warning with icon'}
                        warning
                        icon={'user'}
                        onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <Input placeholder={'info with icon'}
-                       label={'info with icon'}
+                <Input placeholder={'Info with icon'}
+                       label={'Info with icon'}
                        info
                        icon={'user'}
                        onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <Input placeholder={'danger with icon'}
-                       label={'danger with icon'}
+                <Input placeholder={'Danger with icon'}
+                       label={'Danger with icon'}
                        danger
                        icon={'user'}
                        onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <Input placeholder={'success with icon'}
-                       label={'success with icon'}
+                <Input placeholder={'Success with icon'}
+                       label={'Success with icon'}
                        success
                        icon={'user'}
                        onChange={action('onChange')}
@@ -139,4 +139,4 @@ const ButtonStory = (storiesOf('Input', module)
     )
 );
 
-export default  ButtonStory;
+export default  InputStory;

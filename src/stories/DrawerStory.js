@@ -4,25 +4,25 @@ import {action} from '@storybook/addon-actions';
 import {Container, Modal, Row, Col, Panel, Button, DrawerIcon, Drawer} from 'fantastic-components';
 import {State, Store} from '@sambego/storybook-state';
 const store = new Store({
-  showNav: false
+  showNav: true
 });
 const storePrimary = new Store({
-  showNav: false
+  showNav: true
 });
 const storeSecodary = new Store({
-  showNav: false
+  showNav: true
 });
 const storeSuccess = new Store({
-  showNav: false
+  showNav: true
 });
 const storeDanger = new Store({
-  showNav: false
+  showNav: true
 });
 const storeInfo = new Store({
-  showNav: false
+  showNav: true
 });
 const storeWarning = new Store({
-  showNav: false
+  showNav: true
 });
 const DrawerStory = (storiesOf('Drawer', module)
 

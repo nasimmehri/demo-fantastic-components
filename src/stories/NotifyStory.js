@@ -2,7 +2,7 @@ import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 import {Container, Notify, Row, Col, Panel} from 'fantastic-components';
-const ToolTipStory = (storiesOf(' Notify', module)
+const NotifyStory = (storiesOf(' Notify', module)
     .add(
       'Selected Examples',
       () =>
@@ -89,4 +89,4 @@ const ToolTipStory = (storiesOf(' Notify', module)
 
 );
 
-export default  ToolTipStory;
+export default  NotifyStory;

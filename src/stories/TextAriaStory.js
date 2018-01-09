@@ -10,43 +10,43 @@ const TextAriaStory = (storiesOf('TextAria', module)
           <Panel header={'Simple examples'}>
             <Row>
               <Col lg4>
-                <TextAria placeholder={'primary '}
-                          label={'primary '}
+                <TextAria placeholder={'Primary '}
+                          label={'Primary '}
                           primary
                           onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <TextAria placeholder={'secondary'}
-                          label={'secondary'}
+                <TextAria placeholder={'Secondary'}
+                          label={'Secondary'}
                           secondary
                           onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <TextAria placeholder={'warning'}
-                          label={'warning'}
+                <TextAria placeholder={'Warning'}
+                          label={'Warning'}
                           warning
                           onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <TextAria placeholder={'info'}
-                          label={'info'}
+                <TextAria placeholder={'Info'}
+                          label={'Info'}
                           info
                           onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <TextAria placeholder={'danger'}
-                          label={'danger'}
+                <TextAria placeholder={'Danger'}
+                          label={'Danger'}
                           danger
                           onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <TextAria placeholder={'success'}
-                          label={'success'}
+                <TextAria placeholder={'Success'}
+                          label={'Success'}
                           success
                           onChange={action('onChange')}
                 />
@@ -58,48 +58,48 @@ const TextAriaStory = (storiesOf('TextAria', module)
           <Panel header={'Icon examples'}>
             <Row>
               <Col lg4>
-                <TextAria placeholder={'primary with icon'}
-                          label={'primary with icon'}
+                <TextAria placeholder={'Primary with icon'}
+                          label={'Primary with icon'}
                           primary
                           icon={'user'}
                           onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <TextAria placeholder={'secondary with icon'}
-                          label={'secondary with icon'}
+                <TextAria placeholder={'Secondary with icon'}
+                          label={'Secondary with icon'}
                           secondary
                           icon={'user'}
                           onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <TextAria placeholder={'warning with icon'}
-                          label={'warning with icon'}
+                <TextAria placeholder={'Warning with icon'}
+                          label={'Warning with icon'}
                           warning
                           icon={'user'}
                           onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <TextAria placeholder={'info with icon'}
-                          label={'info with icon'}
+                <TextAria placeholder={'Info with icon'}
+                          label={'Info with icon'}
                           info
                           icon={'user'}
                           onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <TextAria placeholder={'danger with icon'}
-                          label={'danger with icon'}
+                <TextAria placeholder={'Danger with icon'}
+                          label={'Danger with icon'}
                           danger
                           icon={'user'}
                           onChange={action('onChange')}
                 />
               </Col>
               <Col lg4>
-                <TextAria placeholder={'success with icon'}
-                          label={'success with icon'}
+                <TextAria placeholder={'Success with icon'}
+                          label={'Success with icon'}
                           success
                           icon={'user'}
                           onChange={action('onChange')}
@@ -111,21 +111,31 @@ const TextAriaStory = (storiesOf('TextAria', module)
           <br/>
           <Row>
 
-            <Col lg6>
+            <Col lg4>
               <Panel header={'Row example'}>
-
                     <TextAria
-                      placeholder={'Row=5'}
-                      label={'Row=5'}
+                      icon={'user'}
+                      placeholder={'TextAria with Row props :(rows=4)'}
+                      label={'TextAria with Row props :(rows=4)'}
                       onChange={action('onChange')}
-                      rows={5}
+                      rows={4}
                     />
 
               </Panel>
             </Col>
-            <Col lg6>
-              <Panel header={'Disabled examples'}>
+            <Col lg4>
+              <Panel header={'Error examples'}>
+                <TextAria placeholder={'TextAria with ErrorText props'}
+                          label={'TextAria with ErrorText props'}
+                          errorText={'TextAria with ErrorText props'}
+                          icon={'user'}
+                          onChange={action('onChange')}
+                />
 
+              </Panel>
+            </Col>
+            <Col lg4>
+              <Panel header={'Disabled examples'}>
                     <TextAria placeholder={'TextAria with Disabled props'}
                               label={'TextAria with Disabled props'}
                               disabled
@@ -135,6 +145,7 @@ const TextAriaStory = (storiesOf('TextAria', module)
 
               </Panel>
             </Col>
+
           </Row>
 
           <br/>

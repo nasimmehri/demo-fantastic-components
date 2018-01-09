@@ -25,7 +25,7 @@ const SelectInputStory = (storiesOf('SelectInput', module)
             <Row>
               <Col lg4>
                 <SelectInput
-                  label={'primary '}
+                  label={'Primary '}
                   primary
                   options={options}
                   defaultOption={'Nothing'}
@@ -35,7 +35,7 @@ const SelectInputStory = (storiesOf('SelectInput', module)
               </Col>
               <Col lg4>
                 <SelectInput
-                  label={'secondary'}
+                  label={'Secondary'}
                   secondary
                   options={options}
                   defaultOption={'Nothing'}
@@ -45,7 +45,7 @@ const SelectInputStory = (storiesOf('SelectInput', module)
               </Col>
               <Col lg4>
                 <SelectInput options={options}
-                             label={'warning'}
+                             label={'Warning'}
                              warning
                              defaultOption={'Nothing'}
                              defaultValue={'0'}
@@ -54,7 +54,7 @@ const SelectInputStory = (storiesOf('SelectInput', module)
               </Col>
               <Col lg4>
                 <SelectInput options={options}
-                             label={'info'}
+                             label={'Info'}
                              info
                              defaultOption={'Nothing'}
                              defaultValue={'0'}
@@ -63,7 +63,7 @@ const SelectInputStory = (storiesOf('SelectInput', module)
               </Col>
               <Col lg4>
                 <SelectInput options={options}
-                             label={'danger'}
+                             label={'Danger'}
                              danger
                              defaultOption={'Nothing'}
                              defaultValue={'0'}
@@ -72,7 +72,7 @@ const SelectInputStory = (storiesOf('SelectInput', module)
               </Col>
               <Col lg4>
                 <SelectInput options={options}
-                             label={'success'}
+                             label={'Success'}
                              success
                              defaultOption={'Nothing'}
                              defaultValue={'0'}
@@ -156,35 +156,32 @@ const SelectInputStory = (storiesOf('SelectInput', module)
            </Row>
            </Panel>*/}
           <br/>
-          <Panel header={'Disabled examples'}>
-            <Row>
-              <Col lg6>
+          <Row>
+            <Col lg6>
+              <Panel header={'Error example'}>
                 <SelectInput options={options}
-                             label={'Input with Disabled props'}
-                             disabled
-                             onChange={action('onChange')}
-                             defaultOption={'Nothing'}
-                             defaultValue={'0'}
-                />
-              </Col>
-
-            </Row>
-          </Panel>
-          <br/>
-          <Panel header={'Error example'}>
-            <Row>
-              <Col lg6>
-                <SelectInput options={options}
-                             label={'Input with error props'}
-                             error
+                             label={'SelectInput with error props'}
                              onChange={action('onChange')}
                              errorText={'Error!!!'}
                              defaultOption={'Nothing'}
                              defaultValue={'0'}
                 />
-              </Col>
-            </Row>
-          </Panel>
+              </Panel>
+            </Col>
+            <Col lg6>
+              <Panel header={'Disabled examples'}>
+                <SelectInput options={options}
+                             label={'SelectInput with Disabled props'}
+                             disabled
+                             onChange={action('onChange')}
+                             defaultOption={'Nothing'}
+                             defaultValue={'0'}
+                />
+              </Panel>
+              <br/>
+            </Col>
+          </Row>
+
         </div>
     )
 );

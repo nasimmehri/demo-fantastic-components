@@ -3,7 +3,7 @@ import {storiesOf} from '@storybook/react';
 
 import {Container, List, Row, Col, Panel} from 'fantastic-components';
 let errorList = ['Email Invalid!', 'Username is wrong!'];
-const BreadcrumbStory = (storiesOf('List', module)
+const ListStory = (storiesOf('List', module)
     .add(
       'Selected Examples',
       () =>
@@ -58,4 +58,4 @@ const BreadcrumbStory = (storiesOf('List', module)
 
 );
 
-export default  BreadcrumbStory;
+export default  ListStory;

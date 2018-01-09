@@ -30,7 +30,7 @@ const storeSuccess = new Store({
   current: 7
 });
 const storeDefault = new Store({
-  current: 6
+  current: 14
 });
 const PaginationStory = (storiesOf('Pagination', module)
     .add(
@@ -74,7 +74,7 @@ const PaginationStory = (storiesOf('Pagination', module)
                     <Pagination
                       total={11}
                       current={storePrimary.get('current')}
-                      visiblepages={3}
+                      visiblePages={3}
                       primary
                       titles={{
                         first: 'first',
@@ -97,7 +97,7 @@ const PaginationStory = (storiesOf('Pagination', module)
                     <Pagination
                       total={11}
                       current={storeSecondary.get('current')}
-                      visiblepages={3}
+                      visiblePages={3}
                       secondary
                       titles={{
                         first: 'first',
@@ -120,7 +120,7 @@ const PaginationStory = (storiesOf('Pagination', module)
                     <Pagination
                       total={11}
                       current={storeInfo.get('current')}
-                      visiblepages={3}
+                      visiblePages={3}
                       titles={{
                         first: 'first',
                         prev: '\u00AB',
@@ -143,7 +143,7 @@ const PaginationStory = (storiesOf('Pagination', module)
                     <Pagination
                       total={11}
                       current={storeWarning.get('current')}
-                      visiblepages={3}
+                      visiblePages={3}
                       titles={{
                         first: 'first',
                         prev: '\u00AB',
@@ -166,7 +166,7 @@ const PaginationStory = (storiesOf('Pagination', module)
                   <Pagination
                     total={11}
                     current={storeDanger.get('current')}
-                    visiblepages={3}
+                    visiblePages={3}
                     titles={{
                       first: 'first',
                       prev: '\u00AB',
@@ -189,7 +189,7 @@ const PaginationStory = (storiesOf('Pagination', module)
                   <Pagination
                     total={11}
                     current={storeSuccess.get('current')}
-                    visiblepages={3}
+                    visiblePages={3}
                     titles={{
                       first: 'first',
                       prev: '\u00AB',
@@ -212,14 +212,14 @@ const PaginationStory = (storiesOf('Pagination', module)
 
             </Panel>
             <br/>
-            <Panel header={'visiblepages : 4 '}>
+            <Panel header={'visiblePages : 8 '}>
               <Row>
                 <Col lg6 md6 sm12>
                   <State store={storeDefault}>
                   <Pagination
-                    total={11}
+                    total={30}
                     current={storeDefault.get('current')}
-                    visiblepages={4}
+                    visiblePages={8}
                     titles={{
                       first: 'first',
                       prev: '\u00AB',

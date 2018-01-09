@@ -27,6 +27,9 @@ const storeWarning = new Store({
 const storeMaxWith = new Store({
   isOpen: false
 });
+const storeNoFooter = new Store({
+  isOpen: false
+});
 
 
 let lorem=`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing elit pellentesque. Quis eleifend quam adipiscing vitae. Sit amet justo donec enim diam vulputate ut pharetra sit. Lorem sed risus ultricies tristique nulla aliquet enim tortor at. Neque gravida in fermentum et sollicitudin ac orci phasellus. Quam adipiscing vitae proin sagittis. Velit scelerisque in dictum non consectetur a. Pulvinar etiam non quam lacus. Auctor eu augue ut lectus arcu bibendum. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Eu feugiat pretium nibh ipsum consequat nisl. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel. Semper quis lectus nulla at volutpat. Et malesuada fames ac turpis egestas integer eget aliquet. Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Bibendum arcu vitae elementum curabitur vitae nunc. At auctor urna nunc id cursus metus. Nisi porta lorem mollis aliquam ut porttitor leo a.`;
@@ -37,6 +40,19 @@ const ModalStory = (storiesOf('Modal', module)
       () =>
         <Container>
           <Row>
+            <State store={storeNoFooter}>
+              <Modal isOpen={storeNoFooter.get('isOpen')}
+                     title={'Modal Without Footer'}
+                     allowClose
+                     iconTitle="envelope"
+                     Btn1Label="yes"
+                     onClose={() => storeNoFooter.set({isOpen: !storeNoFooter.get('isOpen')})}
+
+                     maxWidth={'500px'}
+
+              >{lorem} <br/><br/>{lorem2}
+              </Modal>
+            </State>
             <State store={store}>
               <Modal isOpen={store.get('isOpen')}
                      title={'Modal'}
@@ -194,6 +210,12 @@ const ModalStory = (storiesOf('Modal', module)
               <Panel header={'Modal with maxWithProps:700px'}>
 
                 <Button onClick={() => storeMaxWith.set({isOpen: !storeMaxWith.get('isOpen')})} label={'Show'}/>
+              </Panel>
+            </Col>
+            <Col lg6>
+              <Panel header={'Modal Without Footer'}>
+
+                <Button onClick={() => storeNoFooter.set({isOpen: !storeNoFooter.get('isOpen')})} label={'Show'}/>
               </Panel>
             </Col>
           </Row>

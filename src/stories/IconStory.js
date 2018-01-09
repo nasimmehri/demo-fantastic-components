@@ -2,12 +2,12 @@ import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 import {Container, Icon, Row, Col, Panel} from 'fantastic-components';
-const ButtonStory = (storiesOf('Icon', module)
+const IconStory = (storiesOf('Icon', module)
     .add(
       'Selected Examples',
       () =>
         <div>
-          <Panel header={'Simple example'}>
+          <Panel header={'Theme example'}>
             <Container>
               <Row>
                 <Col lg2 md6 sm12>
@@ -37,22 +37,32 @@ const ButtonStory = (storiesOf('Icon', module)
             <Container>
               <Row>
                 <Col lg2 md6 sm12>
-                  <Icon iconClass={'user'}  xxsmall primary forColor="red"/>
+                  <Icon iconClass={'user'}  xxsmall />
                 </Col>
                 <Col lg2 md6 sm12>
-                  <Icon iconClass={'user'} xsmall primary forColor="red"/>
+                  <Icon iconClass={'user'} xsmall />
                 </Col>
                 <Col lg2 md6 sm12>
-                  <Icon iconClass={'user'} small primary forColor="red"/>
+                  <Icon iconClass={'user'} small />
                 </Col>
                 <Col lg2 md6 sm12>
-                  <Icon iconClass={'user'} larg primary forColor="red"/>
+                  <Icon iconClass={'user'} larg />
                 </Col>
                 <Col lg2 md6 sm12>
-                  <Icon iconClass={'user'}  xlarg primary forColor="red"/>
+                  <Icon iconClass={'user'}  xlarg />
                 </Col>
                 <Col lg2 md6 sm12>
-                  <Icon iconClass={'user'}  xxlarg primary forColor="red"/>
+                  <Icon iconClass={'user'}  xxlarg />
+                </Col>
+              </Row>
+            </Container>
+          </Panel>
+          <br/>
+          <Panel header={'Color examples : (foreColor="red")'}>
+            <Container>
+              <Row>
+                <Col lg2 md6 sm12>
+                  <Icon iconClass={'user'}  larg foreColor="red" />
                 </Col>
               </Row>
             </Container>
@@ -63,4 +73,4 @@ const ButtonStory = (storiesOf('Icon', module)
 
 );
 
-export default  ButtonStory;
+export default  IconStory;

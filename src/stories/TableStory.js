@@ -5,19 +5,19 @@ import {Container, Table, Row, Col, Panel} from 'fantastic-components';
 let elements = [
   {
     id: 1,
-    title: 'title1'
+    name: 'Jim'
   },
   {
     id: 2,
-    title: 'title2'
+    name: 'Sara'
   },
   {
     id: 3,
-    title: 'title3'
+    name: 'Kati'
   },
   {
     id: 4,
-    title: 'title4'
+    name: 'Teo'
   }
 ];
 const TableStory = (storiesOf('Table', module)
@@ -31,16 +31,13 @@ const TableStory = (storiesOf('Table', module)
               <Table
                 rowsCount={elements.length}
                 columns={[
-                  "id",
-                  "title"
+                  "Id",
+                  "Name"
                 ]}
-                columnSize={[
-                  '30%',
-                  '30%',
-                ]}
+                columnSize={['30%,40%']}
                 getRow={(rowId) => {
                   let id = elements[rowId].id;
-                  let title = elements[rowId].title;
+                  let title = elements[rowId].name;
                   return [
                     id,
                     title,
@@ -64,16 +61,12 @@ const TableStory = (storiesOf('Table', module)
               <Table
                 rowsCount={elements.length}
                 columns={[
-                  "id",
-                  "title"
-                ]}
-                columnSize={[
-                  '30%',
-                  '30%',
+                  "Id",
+                  "Name"
                 ]}
                 getRow={(rowId) => {
                   let id = elements[rowId].id;
-                  let title = elements[rowId].title;
+                  let title = elements[rowId].name;
                   return [
                     id,
                     title,
@@ -98,16 +91,12 @@ const TableStory = (storiesOf('Table', module)
               <Table
                 rowsCount={elements.length}
                 columns={[
-                  "id",
-                  "title"
-                ]}
-                columnSize={[
-                  '30%',
-                  '30%',
+                  "Id",
+                  "Name"
                 ]}
                 getRow={(rowId) => {
                   let id = elements[rowId].id;
-                  let title = elements[rowId].title;
+                  let title = elements[rowId].name;
                   return [
                     id,
                     title,
@@ -132,16 +121,12 @@ const TableStory = (storiesOf('Table', module)
               <Table
                 rowsCount={elements.length}
                 columns={[
-                  "id",
-                  "title"
-                ]}
-                columnSize={[
-                  '30%',
-                  '30%',
+                  "Id",
+                  "Name"
                 ]}
                 getRow={(rowId) => {
                   let id = elements[rowId].id;
-                  let title = elements[rowId].title;
+                  let title = elements[rowId].name;
                   return [
                     id,
                     title,
@@ -166,16 +151,12 @@ const TableStory = (storiesOf('Table', module)
               <Table
                 rowsCount={elements.length}
                 columns={[
-                  "id",
-                  "title"
-                ]}
-                columnSize={[
-                  '30%',
-                  '30%',
+                  "Id",
+                  "Name"
                 ]}
                 getRow={(rowId) => {
                   let id = elements[rowId].id;
-                  let title = elements[rowId].title;
+                  let title = elements[rowId].name;
                   return [
                     id,
                     title,
@@ -201,16 +182,12 @@ const TableStory = (storiesOf('Table', module)
               <Table
                 rowsCount={elements.length}
                 columns={[
-                  "id",
-                  "title"
-                ]}
-                columnSize={[
-                  '30%',
-                  '30%',
+                  "Id",
+                  "Name"
                 ]}
                 getRow={(rowId) => {
                   let id = elements[rowId].id;
-                  let title = elements[rowId].title;
+                  let title = elements[rowId].name;
                   return [
                     id,
                     title,
@@ -236,16 +213,12 @@ const TableStory = (storiesOf('Table', module)
               <Table
                 rowsCount={elements.length}
                 columns={[
-                  "id",
-                  "title"
-                ]}
-                columnSize={[
-                  '30%',
-                  '30%',
+                  "Id",
+                  "Name"
                 ]}
                 getRow={(rowId) => {
                   let id = elements[rowId].id;
-                  let title = elements[rowId].title;
+                  let title = elements[rowId].name;
                   return [
                     id,
                     title,
@@ -270,16 +243,12 @@ const TableStory = (storiesOf('Table', module)
               <Table
                 rowsCount={elements.length}
                 columns={[
-                  "id",
-                  "title"
-                ]}
-                columnSize={[
-                  '30%',
-                  '30%',
+                  "Id",
+                  "Name"
                 ]}
                 getRow={(rowId) => {
                   let id = elements[rowId].id;
-                  let title = elements[rowId].title;
+                  let title = elements[rowId].name;
                   return [
                     id,
                     title,
@@ -301,20 +270,16 @@ const TableStory = (storiesOf('Table', module)
           </Col>
 
           <Col lg6>
-            <Panel header={'Striped examples'}>
+            <Panel header={'Hover examples'}>
               <Table
                 rowsCount={elements.length}
                 columns={[
-                  "id",
-                  "title"
-                ]}
-                columnSize={[
-                  '30%',
-                  '30%',
+                  "Id",
+                  "Name"
                 ]}
                 getRow={(rowId) => {
                   let id = elements[rowId].id;
-                  let title = elements[rowId].title;
+                  let title = elements[rowId].name;
                   return [
                     id,
                     title,
@@ -340,16 +305,12 @@ const TableStory = (storiesOf('Table', module)
               <Table
                 rowsCount={elements.length}
                 columns={[
-                  "id",
-                  "title"
-                ]}
-                columnSize={[
-                  '30%',
-                  '30%',
+                  "Id",
+                  "Name"
                 ]}
                 getRow={(rowId) => {
                   let id = elements[rowId].id;
-                  let title = elements[rowId].title;
+                  let title = elements[rowId].name;
                   return [
                     id,
                     title,

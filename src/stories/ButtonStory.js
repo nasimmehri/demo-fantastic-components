@@ -246,7 +246,7 @@ const ButtonStory = (storiesOf('Button', module)
               <Col lg3 md6 sm12>
                 <Button
                   label='Default'
-                  disabled
+                  disable
                   icon='user'
                   onClick={action('clicked')}/>
               </Col>

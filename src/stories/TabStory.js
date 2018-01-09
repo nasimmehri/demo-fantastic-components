@@ -1,7 +1,7 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
-import {action} from '@storybook/addon-actions';
-import {Container, Tab, Row, Col, Panel} from 'fantastic-components';
+import { Tab, Panel} from 'fantastic-components';
+
 const tabs = [
   {title: 'Tab 1', content: (<div> Contetnt 1</div>)},
   {
