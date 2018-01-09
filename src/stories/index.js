@@ -31,6 +31,7 @@ import TagEditorStory from './TagEditorStory';
 import TextAriaStory from './TextAriaStory';
 import ToolTipStory from './ToolTipStory';
 import UploadStory from './UploadStory';
+import TestStory from './TestStory';
 
 
 class index extends Component {
