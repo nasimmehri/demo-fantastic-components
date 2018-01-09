@@ -30,7 +30,9 @@ const storeMaxWith = new Store({
 const storeNoFooter = new Store({
   isOpen: false
 });
-
+const storeButtons = new Store({
+  isOpen: false
+});
 
 let lorem=`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing elit pellentesque. Quis eleifend quam adipiscing vitae. Sit amet justo donec enim diam vulputate ut pharetra sit. Lorem sed risus ultricies tristique nulla aliquet enim tortor at. Neque gravida in fermentum et sollicitudin ac orci phasellus. Quam adipiscing vitae proin sagittis. Velit scelerisque in dictum non consectetur a. Pulvinar etiam non quam lacus. Auctor eu augue ut lectus arcu bibendum. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Eu feugiat pretium nibh ipsum consequat nisl. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel. Semper quis lectus nulla at volutpat. Et malesuada fames ac turpis egestas integer eget aliquet. Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Bibendum arcu vitae elementum curabitur vitae nunc. At auctor urna nunc id cursus metus. Nisi porta lorem mollis aliquam ut porttitor leo a.`;
 let lorem2=`Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Pretium lectus quam id leo in vitae turpis. Eget velit aliquet sagittis id consectetur purus ut faucibus. Leo in vitae turpis massa sed. Felis eget nunc lobortis mattis. Gravida rutrum quisque non tellus. Justo donec enim diam vulputate ut. Urna et pharetra pharetra massa massa ultricies. In mollis nunc sed id semper. Amet luctus venenatis lectus magna fringilla. Condimentum mattis pellentesque id nibh tortor id. Leo in vitae turpis massa sed elementum tempus egestas. Tellus mauris a diam maecenas sed enim ut sem. Massa vitae tortor condimentum lacinia. Mattis vulputate enim nulla aliquet porttitor lacus luctus. Adipiscing diam donec adipiscing tristique risus. Faucibus in ornare quam viverra orci sagittis. Est lorem ipsum dolor sit amet consectetur adipiscing. Duis ut diam quam nulla porttitor.`
@@ -40,14 +42,29 @@ const ModalStory = (storiesOf('Modal', module)
       () =>
         <Container>
           <Row>
+            <State store={storeButtons}>
+              <Modal isOpen={storeButtons.get('isOpen')}
+                     title={'Modal With Buutons in Footer'}
+                     allowClose
+                     iconTitle="envelope"
+                     Btn1Label={'yes'}
+                     Btn2Label={'No'}
+                     Btn3Label={'Cancel'}
+                     Btn3action={()=> storeButtons.set({isOpen: false})}
+                     Btn1Type="primary"
+                     Btn2Type="secondary"
+                     onClose={() => storeButtons.set({isOpen: !storeButtons.get('isOpen')})}
+                     maxWidth={'500px'}
+
+              >{lorem} <br/><br/>{lorem2}
+              </Modal>
+            </State>
             <State store={storeNoFooter}>
               <Modal isOpen={storeNoFooter.get('isOpen')}
                      title={'Modal Without Footer'}
                      allowClose
                      iconTitle="envelope"
-                     Btn1Label="yes"
                      onClose={() => storeNoFooter.set({isOpen: !storeNoFooter.get('isOpen')})}
-
                      maxWidth={'500px'}
 
               >{lorem} <br/><br/>{lorem2}
@@ -58,7 +75,6 @@ const ModalStory = (storiesOf('Modal', module)
                      title={'Modal'}
                      allowClose
                      iconTitle="envelope"
-                     Btn1Label="yes"
                      onClose={() => store.set({isOpen: !store.get('isOpen')})}
                      footerChildren={<div><b>footer</b></div>}
                      maxWidth={'500px'}
@@ -71,7 +87,6 @@ const ModalStory = (storiesOf('Modal', module)
                      title={'Modal'}
                      allowClose
                      iconTitle="envelope"
-                     Btn1Label="yes"
                      onClose={() => storePrimary.set({isOpen: !storePrimary.get('isOpen')})}
                      footerChildren={<div><b>footer</b></div>}
                      primary
@@ -84,7 +99,6 @@ const ModalStory = (storiesOf('Modal', module)
                      title={'Modal'}
                      allowClose
                      iconTitle="envelope"
-                     Btn1Label="yes"
                      onClose={() => storeSecondary.set({isOpen: !storeSecondary.get('isOpen')})}
                      footerChildren={<div><b>footer</b></div>}
                      secondary
@@ -97,7 +111,6 @@ const ModalStory = (storiesOf('Modal', module)
                      title={'Modal'}
                      allowClose
                      iconTitle="envelope"
-                     Btn1Label="yes"
                      onClose={() => storeInfo.set({isOpen: !storeInfo.get('isOpen')})}
                      footerChildren={<div><b>footer</b></div>}
                      info
@@ -110,7 +123,6 @@ const ModalStory = (storiesOf('Modal', module)
                      title={'Modal'}
                      allowClose
                      iconTitle="envelope"
-                     Btn1Label="yes"
                      onClose={() => storeDanger.set({isOpen: !storeDanger.get('isOpen')})}
                      footerChildren={<div><b>footer</b></div>}
                      danger
@@ -123,7 +135,6 @@ const ModalStory = (storiesOf('Modal', module)
                      title={'Modal'}
                      allowClose
                      iconTitle="envelope"
-                     Btn1Label="yes"
                      onClose={() => storeSuccess.set({isOpen: !storeSuccess.get('isOpen')})}
                      footerChildren={<div><b>footer</b></div>}
                      success
@@ -136,7 +147,6 @@ const ModalStory = (storiesOf('Modal', module)
                      title={'Modal'}
                      allowClose
                      iconTitle="envelope"
-                     Btn1Label="yes"
                      onClose={() => storeWarning.set({isOpen: !storeWarning.get('isOpen')})}
                      footerChildren={<div><b>footer</b></div>}
                      warning
@@ -149,7 +159,6 @@ const ModalStory = (storiesOf('Modal', module)
                      title={'Modal'}
                      allowClose
                      iconTitle="envelope"
-                     Btn1Label="yes"
                      maxWidth={'700px'}
                      onClose={() => storeMaxWith.set({isOpen: !storeMaxWith.get('isOpen')})}
                      footerChildren={<div><b>footer</b></div>}
@@ -216,6 +225,12 @@ const ModalStory = (storiesOf('Modal', module)
               <Panel header={'Modal Without Footer'}>
 
                 <Button onClick={() => storeNoFooter.set({isOpen: !storeNoFooter.get('isOpen')})} label={'Show'}/>
+              </Panel>
+            </Col>
+            <Col lg6>
+              <Panel header={'Modal With Buttons in footer'}>
+
+                <Button onClick={() => storeButtons.set({isOpen: !storeButtons.get('isOpen')})} label={'Show'}/>
               </Panel>
             </Col>
           </Row>
